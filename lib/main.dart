@@ -1,4 +1,4 @@
-import 'package:clothing_store_app/Screens/splash_screen.dart';
+import 'package:clothing_store_app/Screens/Starting%20Screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,11 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Clothing Store',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const SplashScreen(),
+      home: const WelcomeScreen(),
     );
   }
 }
